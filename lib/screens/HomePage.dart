@@ -12,9 +12,7 @@ class Homepage extends StatefulWidget {
   @override
   State<Homepage> createState() => _HomepageState();
 }
-//Sorry Bhaia. I was sick for a few days and this is why I couldn't finish this project.
-// I programmed this project in only 2 days.
-// I could easily complete it if I weren't sick and could have few more days to work on it.
+
 
 class _HomepageState extends State<Homepage> {
   String usertype = '';

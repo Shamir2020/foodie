@@ -7,7 +7,7 @@ import 'screens/loginScreen.dart';
 import 'screens/profileScreen.dart';
 import 'screens/AddRestaurantScreen.dart';
 import 'screens/CartScreen.dart';
-
+import 'screens/splashScreen.dart';
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
@@ -27,15 +27,15 @@ class _FoodieState extends State<Foodie> {
     if (FirebaseAuth.instance.currentUser != null){
       return MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: '/home',
+        initialRoute: '/splashScreen',
         routes: {
           '/home':(context)=> Homepage(),
           '/register':(context)=>SignUp(),
           '/login':(context)=>Login(),
           '/profile':(context)=>Profile(),
           '/addRestaurant':(context)=>AddRestaurant(),
-          '/cart':(context)=> CartPage()
-
+          '/cart':(context)=> CartPage(),
+          '/splashScreen':(context)=>SplashScreen()
         },
       );
     }
